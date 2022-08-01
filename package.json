@@ -1,0 +1,22 @@
+{
+  "name": "react-nest-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/min9120/react-nest-boilerplate.git",
+  "author": "min9120 <a9120a@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "@nestjs/cli": "^9.0.0"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.5.0"
+  },
+  "scripts": {
+    "client:start": "yarn workspace client run start",
+    "server:start": "yarn workspace server run start"
+  }
+}
